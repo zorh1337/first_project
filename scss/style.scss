@@ -1,0 +1,272 @@
+@import 'nullstyle.scss';
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto&display=swap');
+body{
+	max-width: 100%;
+	height: 100%;
+	margin: 0;	
+	padding: 0;
+	
+}
+
+.main-image{
+	width: 100%;
+	height: 1080px;
+	background: url('/img/photo-texture.png') top left/100% 100% no-repeat;
+	
+	.main-image__logo{
+		width: 195px;
+		height: 123px;
+		display: block;
+		background: url('/img/logo-copy.png') center no-repeat;
+		margin: 0 auto 0;
+		position: relative;
+		top: 200px;
+		// margin: 274px 0px 0px 869px;
+		
+		
+	}
+}
+.main-image__text{
+	margin-top: 360px;	
+	color: white;
+	font-family: 'lato';
+	text-align: center;
+	font-size: 20px;
+	line-height: 40px;
+	letter-spacing: 5.44px;
+	span{
+		font-size: 34px;
+		font-weight: 900;
+		text-transform: uppercase;
+	}
+	&:after{
+		margin: 50px auto 180px;
+	
+		content: '';
+		display: block;
+	
+		width: 105px;
+		height: 1px;
+		background: white;
+	}
+}
+.main-image__bitton{
+	button{height:47px;
+		width: 182px;
+		color: white;
+		font-size: 15.5px;
+		font-family: 'lato';
+		letter-spacing: 0.93px;
+		text-align: center;
+		background-color: Transparent;
+		border: 1px solid ;
+		display: block;
+		margin: 0px auto 0px;
+		&:hover{
+			color: rgb(19, 186, 236);
+		}
+	}
+	
+
+}
+nav{
+	display: block;
+	&::after{
+		content: '';
+		
+		margin-top: 24px;
+		width: 100%x;
+		height: 1px;
+		background: rgb(240, 226, 226);
+		display: block;
+		margin-bottom: 130px;
+	}
+}
+.menu{
+	display: block;
+	
+	margin: 22px auto 0px;
+	text-align: center;
+	
+	
+	
+	.menu__item{
+		text-transform:uppercase;
+		font-family: 'lato';
+		font-size: 15.5px;
+		display: inline-block;
+		padding-right: 35px;
+		text-decoration: none;
+		a{
+			color: #3c3c3c;
+			font-weight: 700;
+			&:hover{
+				color: #ada074;
+			}
+		}
+		
+		
+
+	}
+}
+.about{
+	margin: 0 0 50px 0;
+}
+
+
+.about {
+
+	// .about__title
+
+
+
+	&__title {
+		font-family: 'lato';
+		font-size: 34px;
+		font-weight: bold;
+		text-align: center;
+		&::after{
+			content: '';
+			display: block;
+			width: 81px;
+			height: 1px;
+			background: #000;
+			margin: 35px auto 37px;
+			margin-top: 35px;
+			margin-bottom: 37px;
+			
+
+		}
+	}
+
+	// .about__text
+
+	&__text {
+		text-align: center;
+		line-height: 26px;
+		font-size: 14px;
+		font-family: 'lato';
+		font-weight: lighter;
+		color: 	#868585;
+	}
+}
+
+
+.line {
+	width: 823px;
+	display: flex;
+	
+	
+	
+	margin: 22px auto 0px;
+	// .line__item
+
+	&__item {
+		flex: 0 0 33.33%;
+		
+		text-align: center;
+		
+	}
+
+	// .line__img
+
+	&__img {
+		width: 92px;
+		height: 92px;
+		border: 1px solid black;
+		border-radius: 50%;
+		padding: 25px;
+		margin: 0px auto 41px;
+	}
+
+	// .line__title
+
+	&__title {
+		font-family: 'lato';
+		font-size: 22px;
+		letter-spacing: 3.52px;
+		color: black;
+		font-weight: bold;
+		margin-bottom: 36px;
+	}
+
+	// .line__text
+
+	&__text {
+		color: #868585;
+		font-size: 14px;
+		line-height: 26px;
+		text-align: center;
+		display: inline-block;
+		margin-bottom: 95px;
+	}
+}
+
+.portfolio {
+	
+	width: 100%;
+	background: #f3f3f3;
+	padding: 107px 0 0 0;
+	display: block;
+	margin: 22px auto 0px;
+	text-align: center;
+
+	// .portfolio__menu
+	&__title{
+		font-family: 'lato';
+		font-size: 34px;
+		font-weight: bold;
+		padding: 0 auto;
+		&::after{
+			content: '';
+			display: block;
+			width: 81px;
+			height: 1px;
+			background: #000;
+			margin: 40px auto 50px;
+			
+}
+	}
+	&__menu {
+		
+	}
+
+	// .portfolio__item
+
+	&__item {
+		text-transform:uppercase;
+		font-family: 'lato';
+		font-size: 15.5px;
+		display: inline-block;
+		
+		text-decoration: none;
+		a{
+			color: #3c3c3c;
+			font-weight: 700;
+			&:hover{
+				color: #ada074;
+			}
+			
+				padding-left: 35px;
+			
+		}
+	}
+	&__work{
+		display: inline-block;
+		padding: 136px 0 0 0;
+		width: 538px;
+		height: 365px;
+		background: #eaeaea;
+		&:nth-child(odd){
+			margin-left: 420px;
+		}
+		&:nth-child(even){
+			margin-right: 420px;
+		}
+		
+		
+	}
+	&__button{
+		display: block;
+	}
+}
