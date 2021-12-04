@@ -278,6 +278,7 @@ nav::after {
   font-family: 'lato';
   font-size: 15.5px;
   display: inline-block;
+  margin-bottom: 136px;
   text-decoration: none;
 }
 
@@ -291,22 +292,27 @@ nav::after {
   color: #ada074;
 }
 
-.portfolio__work {
-  display: inline-block;
-  padding: 136px 0 0 0;
-  width: 538px;
-  height: 365px;
-  background: #eaeaea;
-}
-
-.portfolio__work:nth-child(odd) {
-  margin-left: 420px;
-}
-
-.portfolio__work:nth-child(even) {
-  margin-right: 420px;
-}
-
 .portfolio__button {
   display: block;
+}
+
+.workgroup {
+  width: 60%;
+  height: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.workgroup__work {
+  -ms-flex-preferred-size: 49%;
+      flex-basis: 49%;
+  background: #eaeaea;
+  margin-bottom: 11px;
 }
