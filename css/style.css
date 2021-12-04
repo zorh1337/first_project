@@ -332,4 +332,50 @@ nav::after {
   background: url("/img/bg-header-copy.png") center no-repeat;
   width: 100%;
   height: 400px;
+  text-align: center;
+}
+
+.other-partners__text {
+  padding-top: 100px;
+  display: block;
+  font-size: 30.5px;
+  font-family: 'lato';
+  color: white;
+  font-weight: lighter;
+}
+
+.other-partners__imagesbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 93px auto 0;
+  width: 60%;
+  height: 64px;
+}
+
+.other-partners__imagesbox .other-partners__img1 {
+  background: url("/img/logo2.png") no-repeat;
+  width: 35px;
+  height: 47px;
+}
+
+.other-partners__imagesbox .other-partners__img2 {
+  background: url("/img/logo3.png") no-repeat;
+  width: 52px;
+  height: 62px;
+}
+
+.other-partners__imagesbox .other-partners__img3 {
+  background: url("/img/logo4.png") no-repeat;
+  width: 53px;
+  height: 64px;
+}
+
+.other-partners__imagesbox .other-partners__img4 {
+  background: url("/img/logo5.png") no-repeat;
+  width: 111px;
+  height: 40px;
 }
