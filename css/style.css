@@ -379,3 +379,66 @@ nav::after {
   width: 111px;
   height: 40px;
 }
+
+.title {
+  text-transform: uppercase;
+  font-family: 'lato';
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.title::after {
+  content: '';
+  display: block;
+  width: 81px;
+  height: 1px;
+  background: #000;
+  margin: 35px auto 37px;
+  margin-top: 35px;
+  margin-bottom: 37px;
+}
+
+.contact__title {
+  margin-top: 150px;
+}
+
+.contact__label {
+  font-size: 14px;
+  display: inline-block;
+  font-weight: bold;
+  margin-bottom: 18px;
+  line-height: 12px;
+  letter-spacing: 0.84px;
+  text-transform: uppercase;
+}
+
+.contact__input {
+  border-top: 1px solid #3c3c3c;
+  width: 160px;
+  background: #f8f7f7;
+  height: 35px;
+  margin-right: 60px;
+  margin-bottom: 75px;
+  font-family: 'lato';
+}
+
+.contact__input-name {
+  font-family: 'lato';
+  height: 66px;
+  display: inline-block;
+}
+
+.contact__input-email {
+  font-family: 'lato';
+  display: inline-block;
+}
+
+.contact__textarea {
+  font-family: 'lato';
+  width: 383px;
+  height: 118px;
+  display: inline-block;
+  background: #f8f7f7;
+  border-top: 1px solid #3c3c3c;
+}
