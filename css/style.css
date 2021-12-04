@@ -292,17 +292,13 @@ nav::after {
   color: #ada074;
 }
 
-.portfolio__button {
-  display: block;
-}
-
 .workgroup {
   width: 60%;
   height: 1000px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto;
+  margin: 0 auto 64px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: justify;
@@ -315,4 +311,17 @@ nav::after {
       flex-basis: 49%;
   background: #eaeaea;
   margin-bottom: 11px;
+}
+
+.workgroup__button {
+  width: 182px;
+  height: 47px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 15px;
+  font-family: 'lato';
+  text-transform: uppercase;
+  border: 1px solid black;
+  margin-bottom: 62px;
 }

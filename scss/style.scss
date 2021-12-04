@@ -231,7 +231,6 @@ nav{
 		
 	}
 
-	// .portfolio__item
 
 	&__item {
 		text-transform:uppercase;
@@ -251,28 +250,6 @@ nav{
 			
 		}
 	}
-	// &__work{
-	// 	display: inline-block;
-	// 	padding: 136px 0 0 0;
-	// 	width: 538px;
-	// 	height: 365px;
-	// 	background: #eaeaea;
-	// 	&:nth-child(odd){
-	// 		margin-left: 420px;
-	// 	}
-	// 	&:nth-child(even){
-	// 		margin-right: 420px;
-	// 	}
-		
-		
-	// }
-
-
-
-
-	&__button{
-		display: block;
-	}
 }
 
 .workgroup{
@@ -280,21 +257,27 @@ nav{
 	width: 60%;
 	height: 1000px;
 	display: flex;
-	margin: 0 auto;
-	
+	margin: 0 auto 64px;
+
 	flex-wrap: wrap;
 	justify-content: space-between;
 	
 
 	&__work{
-		
 		flex-basis: 49%;
 		background: #eaeaea;
 		margin-bottom: 11px;
-		
-		
-	
-		
-		
 	}
+}
+.workgroup__button{
+width: 182px;
+height: 47px;
+display: block;
+text-align: center;
+margin: 0 auto;
+font-size: 15px;
+font-family: 'lato';
+text-transform: uppercase;
+border: 1px solid black;
+margin-bottom: 62px;
 }
