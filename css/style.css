@@ -403,6 +403,11 @@ nav::after {
   margin-top: 150px;
 }
 
+.contact__form {
+  border: 1px solid red;
+  display: inline-block;
+}
+
 .contact__label {
   font-size: 14px;
   display: inline-block;
@@ -441,4 +446,46 @@ nav::after {
   display: inline-block;
   background: #f8f7f7;
   border-top: 1px solid #3c3c3c;
+}
+
+.contact__second-part {
+  width: 15.53599%;
+  border: 1px solid gray;
+  display: inline-block;
+}
+
+.contact__text {
+  color: #3c3c3c;
+  font-size: 14px;
+  line-height: 26px;
+  font-family: 'lato';
+  margin-bottom: 15px;
+}
+
+.contact__name p {
+  font-family: 'lato';
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.contact__email {
+  font-family: 'lato';
+  font-size: 14px;
+}
+
+.contact__email span {
+  font-family: 'lato';
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.contact__s1 {
+  width: 29px;
+  height: 29px;
+  background: url("/img/ins");
+}
+
+.contact__s2 {
+  width: 29px;
+  height: 29px;
 }

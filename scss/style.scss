@@ -348,6 +348,8 @@ margin-bottom: 80px;
 		
 	}
 	&__form{
+		border: 1px solid red;
+		display: inline-block;
 		
 
 	}
@@ -388,4 +390,47 @@ margin-bottom: 80px;
 		border-top: 1px solid #3c3c3c;
 
 }
+	&__second-part{
+		width: 300px * 100% / 1931px;
+		border: 1px solid gray;
+		display: inline-block;
+	}
+
+	&__text{
+		color: #3c3c3c;
+		font-size: 14px;
+		line-height: 26px;
+		font-family: 'lato';
+		margin-bottom: 15px;
+	}
+
+	
+}
+.contact__name{
+	p{
+		font-family: 'lato';
+		font-size: 14px;
+		font-weight: bold;}
+	
+}
+.contact__email{
+	font-family: 'lato';
+		font-size: 14px;
+		
+	span{
+		font-family: 'lato';
+		font-size: 14px;
+		font-weight: bold
+	}
+}
+.contact__s1{
+	width: 29px;
+	height: 29px;
+	background: url('/img/ins');
+
+}
+.contact__s2{
+	width: 29px;
+	height: 29px;
+	
 }
