@@ -396,7 +396,18 @@ nav::after {
   background: #000;
   margin: 35px auto 37px;
   margin-top: 35px;
-  margin-bottom: 37px;
+  margin-bottom: 119px;
+}
+
+.contact__flex {
+  margin: 0 auto;
+  width: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .contact__title {
@@ -404,7 +415,6 @@ nav::after {
 }
 
 .contact__form {
-  border: 1px solid red;
   display: inline-block;
 }
 
@@ -449,8 +459,7 @@ nav::after {
 }
 
 .contact__second-part {
-  width: 15.53599%;
-  border: 1px solid gray;
+  width: 30%;
   display: inline-block;
 }
 
@@ -482,10 +491,17 @@ nav::after {
 .contact__s1 {
   width: 29px;
   height: 29px;
-  background: url("/img/ins");
+  background: url("/img/facebook.png") center no-repeat;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: inline-block;
 }
 
 .contact__s2 {
   width: 29px;
   height: 29px;
+  background: url("/img/instagram.png") center no-repeat;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: inline-block;
 }

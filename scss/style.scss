@@ -336,19 +336,25 @@ margin-bottom: 80px;
 			background: #000;
 			margin: 35px auto 37px;
 			margin-top: 35px;
-			margin-bottom: 37px;
+			margin-bottom: 119px;
 			
 
 		}
 }
 .contact{
+	&__flex{
+		margin: 0 auto;
+		width: 55%;
+		display: flex;
+		justify-content: space-between;
+	}
 	
 	&__title{
 		margin-top: 150px;
 		
 	}
 	&__form{
-		border: 1px solid red;
+		
 		display: inline-block;
 		
 
@@ -391,8 +397,8 @@ margin-bottom: 80px;
 
 }
 	&__second-part{
-		width: 300px * 100% / 1931px;
-		border: 1px solid gray;
+		width: 30%;
+		
 		display: inline-block;
 	}
 
@@ -426,11 +432,17 @@ margin-bottom: 80px;
 .contact__s1{
 	width: 29px;
 	height: 29px;
-	background: url('/img/ins');
+	background: url('/img/facebook.png')center no-repeat;
+	border: 1px solid black;
+	border-radius: 50%;
+	display: inline-block;
 
 }
 .contact__s2{
 	width: 29px;
 	height: 29px;
-	
+	background: url('/img/instagram.png')center no-repeat;
+	border: 1px solid black;
+	border-radius: 50%;
+	display: inline-block;
 }
