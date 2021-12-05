@@ -153,17 +153,14 @@ nav{
 
 
 .line {
-	width: 823px;
+	width: 60%;
 	display: flex;
-	
-	
-	
 	margin: 22px auto 0px;
+	flex-wrap: wrap;
 	// .line__item
 
 	&__item {
-		flex: 0 0 33.33%;
-		
+		flex: 1 1 33.33%;
 		text-align: center;
 		
 	}
@@ -231,14 +228,13 @@ nav{
 		
 	}
 
-	// .portfolio__item
 
 	&__item {
 		text-transform:uppercase;
 		font-family: 'lato';
 		font-size: 15.5px;
 		display: inline-block;
-		
+		margin-bottom: 136px;
 		text-decoration: none;
 		a{
 			color: #3c3c3c;
@@ -251,22 +247,190 @@ nav{
 			
 		}
 	}
+}
+
+.workgroup{
+	
+	width: 60%;
+	height: 1000px;
+	display: flex;
+	margin: 0 auto 64px;
+
+	flex-wrap: wrap;
+	justify-content: space-between;
+	
+
 	&__work{
-		display: inline-block;
-		padding: 136px 0 0 0;
-		width: 538px;
-		height: 365px;
+		flex-basis: 49%;
 		background: #eaeaea;
-		&:nth-child(odd){
-			margin-left: 420px;
-		}
-		&:nth-child(even){
-			margin-right: 420px;
-		}
-		
-		
+		margin-bottom: 11px;
 	}
-	&__button{
+}
+.workgroup__button{
+width: 182px;
+height: 47px;
+display: block;
+text-align: center;
+margin: 0 auto;
+font-size: 15px;
+font-family: 'lato';
+text-transform: uppercase;
+border: 1px solid black;
+margin-bottom: 80px;
+}
+
+.other-partners{
+	background:	url('/img/bg-header-copy.png') center  no-repeat;
+	width: 100%;
+	height: 400px;
+	text-align: center;
+	&__text{
+		padding-top: 100px;
 		display: block;
+		font-size:30.5px;
+		font-family: 'lato';
+		color: white;
+		font-weight: lighter;
+
 	}
+}
+.other-partners__imagesbox{
+	display: flex;
+	justify-content: space-between;
+	margin: 93px auto 0;
+	width:60%;
+	height: 64px;
+	.other-partners__img1{
+		background: url('/img/logo2.png') no-repeat ;
+		width: 35px;
+		height: 47px;
+	}
+	.other-partners__img2{
+		background: url('/img/logo3.png') no-repeat ;
+		width: 52px;
+		height: 62px;
+	}
+	.other-partners__img3{
+		background: url('/img/logo4.png') no-repeat ;
+		width: 53px;
+		height: 64px;
+	}
+	.other-partners__img4{
+		background: url('/img/logo5.png') no-repeat ;
+		width: 111px;
+		height: 40px;
+	}
+}
+
+.title{
+	text-transform: uppercase;
+	font-family: 'lato';
+		font-size: 34px;
+		font-weight: bold;
+		text-align: center;
+		&::after{
+			content: '';
+			display: block;
+			width: 81px;
+			height: 1px;
+			background: #000;
+			margin: 35px auto 37px;
+			margin-top: 35px;
+			margin-bottom: 37px;
+			
+
+		}
+}
+.contact{
+	
+	&__title{
+		margin-top: 150px;
+		
+	}
+	&__form{
+		border: 1px solid red;
+		display: inline-block;
+		
+
+	}
+	&__label{
+		font-size: 14px;
+	display: inline-block;
+		font-weight: bold;
+		margin-bottom: 18px;
+		line-height: 12px;
+		letter-spacing: 0.84px;
+		text-transform: uppercase;
+		
+	}
+	&__input{
+		border-top: 1px solid #3c3c3c;
+		width: 160px;
+		background: #f8f7f7;
+		height: 35px;
+		margin-right: 60px;
+		margin-bottom: 75px;
+		font-family: 'lato';
+	}
+	&__input-name{
+		font-family: 'lato';
+		height: 66px;
+		display: inline-block;
+	}
+	&__input-email{
+		font-family: 'lato';
+		display: inline-block;
+	}
+	&__textarea{
+		font-family: 'lato';
+		width: 383px;
+		height: 118px;
+		display: inline-block;
+		background: #f8f7f7;
+		border-top: 1px solid #3c3c3c;
+
+}
+	&__second-part{
+		width: 300px * 100% / 1931px;
+		border: 1px solid gray;
+		display: inline-block;
+	}
+
+	&__text{
+		color: #3c3c3c;
+		font-size: 14px;
+		line-height: 26px;
+		font-family: 'lato';
+		margin-bottom: 15px;
+	}
+
+	
+}
+.contact__name{
+	p{
+		font-family: 'lato';
+		font-size: 14px;
+		font-weight: bold;}
+	
+}
+.contact__email{
+	font-family: 'lato';
+		font-size: 14px;
+		
+	span{
+		font-family: 'lato';
+		font-size: 14px;
+		font-weight: bold
+	}
+}
+.contact__s1{
+	width: 29px;
+	height: 29px;
+	background: url('/img/ins');
+
+}
+.contact__s2{
+	width: 29px;
+	height: 29px;
+	
 }
