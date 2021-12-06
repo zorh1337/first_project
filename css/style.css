@@ -329,7 +329,7 @@ nav::after {
 }
 
 .other-partners {
-  background: url("/img/bg-header-copy.png") center no-repeat;
+  background: url("/img/bg-header-copy.png") center/cover no-repeat;
   width: 100%;
   height: 400px;
   text-align: center;
@@ -405,9 +405,9 @@ nav::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .contact__title {
