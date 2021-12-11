@@ -476,8 +476,8 @@ nav {
 
 .contact__form-flex {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 383px;
-          flex: 0 1 383px;
+      -ms-flex: 0 0 383px;
+          flex: 0 0 383px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -485,7 +485,6 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
   padding: 0px 83px 0px 0px;
 }
 
@@ -711,6 +710,9 @@ nav {
 }
 
 @media (max-width: 780px) {
+  .button {
+    margin-bottom: 40px;
+  }
   .contact__form-flex {
     padding: 0;
   }
@@ -778,6 +780,11 @@ nav {
 }
 
 @media (max-width: 445px) {
+  .contact__form-flex {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
   .top {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

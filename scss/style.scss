@@ -376,10 +376,10 @@ letter-spacing: 3.52px;
 	display: flex;
 }
 .contact__form-flex{
-	flex: 0 1 383px;
+	flex: 0 0 383px;
 	display: flex;
 	flex-direction: column;
-	width: 100%;
+	
 	padding: 0px 83px 0px 0px;
 	
 }
@@ -590,6 +590,9 @@ padding: 48px 0px 35px 0px;
 	}
 }
 @media(max-width:780px){
+	.button{
+		margin-bottom: 40px;
+	}
 	.contact__form-flex {
 		padding: 0;
 	}
@@ -659,6 +662,10 @@ padding: 48px 0px 35px 0px;
 	}
 }
 @media(max-width:445px){
+	.contact__form-flex{
+		flex: 0 1 100%;
+	}
+	
 	
 	.top{
 		flex-direction: column;
@@ -673,6 +680,9 @@ padding: 48px 0px 35px 0px;
 	}
 	.left{
 		padding-bottom: 10px;
+	}
+	.input{
+		
 	}
 	
 	.right__label{
