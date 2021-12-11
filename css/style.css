@@ -165,12 +165,20 @@ nav {
   padding: 0px 0px 154px 0px;
 }
 
+.menu-list::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #f2f2f2;
+}
+
 .menu-list li {
   display: inline-block;
   color: #3c3c3c;
   font-size: 15px;
   font-weight: bold;
-  padding: 0px 0px 0px 30px;
+  padding: 0px 0px 22px 30px;
 }
 
 .menu-list li:hover {
@@ -201,7 +209,8 @@ nav {
 
 .about__conrainer {
   margin: 0 auto;
-  max-width: 700px;
+  max-width: 730px;
+  padding: 0 15px;
 }
 
 .about__title {
@@ -429,7 +438,7 @@ nav {
 
 .contact {
   background: #ffffff;
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -437,100 +446,116 @@ nav {
   margin: 166px 0px 120px 0px;
 }
 
-.form__your {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 40%;
-  margin: 0px 0px 60px 0px;
-}
-
-.form__name {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 50%;
-          flex: 0 1 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 0px 0px 0px 0px;
-}
-
-.form__name .form__imput-text {
-  margin: 0px 60px 0px 0px;
-}
-
-.form__email {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 50%;
-          flex: 0 1 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 0px 0px 0px 0px;
-}
-
-.form__imput-text {
-  padding: 0px 15px 15px 0px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 50%;
-          flex: 0 1 50%;
-  display: block;
-  width: 161px;
-  height: 35px;
-  background-color: #f8f7f7;
-  border-top: 1px solid black;
-}
-
-.your__textarea {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.for__textarea {
-  overflow: hidden;
-  resize: none;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 50%;
-          flex: 0 1 50%;
-  background-color: #f8f7f7;
-  border-top: 1px solid black;
-  width: 100%;
-  height: 118px;
-}
-
-.form__title {
-  padding: 0px 15px 15px 0px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 50%;
-          flex: 0 1 50%;
-  flex: 0 1 50%;
-  display: block;
+.label {
+  text-transform: uppercase;
   font-size: 14px;
-  font-weight: bold;
   letter-spacing: 0.84px;
   color: #000;
+  font-weight: bold;
+}
+
+.input {
+  height: 35px;
+  background: #f8f7f7;
+  border-top: 1px solid black;
+}
+
+.textarea {
+  margin: 0;
+  background: #f8f7f7;
+  border-top: 1px solid black;
+  height: 118px;
+  width: 383px;
+}
+
+.contact__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact__form-flex {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 383px;
+          flex: 0 1 383px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding: 0px 83px 0px 0px;
+}
+
+.form__container {
+  margin: 0 auto;
+  max-width: 733px;
+  padding: 0 15px;
+}
+
+.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px 0px 75px 0px;
+}
+
+.left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.left__label {
+  padding: 0px 0px 18px 0px;
+}
+
+.right__label {
+  padding: 0px 0px 18px 0px;
+}
+
+.bottom__label {
+  padding: 0px 0px 18px 0px;
 }
 
 .button {
-  margin: 53px 0px 102px 0px;
+  margin: 24px 0px 102px 0px;
   text-align: center;
   border: none;
   font-size: 14px;
   letter-spacing: 0.84px;
   font-weight: bold;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .button button {
@@ -539,8 +564,8 @@ nav {
 
 .props {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 60%;
-          flex: 0 1 60%;
+      -ms-flex: 0 1 252px;
+          flex: 0 1 252px;
   font-size: 14px;
   line-height: 26px;
   color: #000;
@@ -580,7 +605,7 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 60%;
+  max-width: 718px;
   margin: 0 auto;
 }
 
@@ -686,8 +711,29 @@ nav {
 }
 
 @media (max-width: 780px) {
+  .contact__form-flex {
+    padding: 0;
+  }
+  .form__your {
+    margin: 0 auto;
+  }
+  .contact__flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .props {
+    text-align: center;
+  }
+  .top {
+    text-align: left;
+  }
+  .contact__title {
+    margin: 50px 0px 50px 0px;
+  }
   .menu-list li {
-    padding: 0px 0px 0px 12px;
+    padding: 0px 0px 22px 12px;
   }
   .work__container {
     -webkit-box-orient: vertical;
@@ -714,5 +760,49 @@ nav {
   }
   .works__item:last-child {
     margin: 0px 0px 0px 0px;
+  }
+  .button {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    width: 100%;
+  }
+  .button button {
+    border: 1px solid black;
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+  }
+  .top {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 445px) {
+  .top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+    padding-bottom: 10px;
+  }
+  .bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+  }
+  .left {
+    padding-bottom: 10px;
+  }
+  .right__label {
+    padding: 0px 0px 5px 0px;
+  }
+  .left__label {
+    padding: 0px 0px 5px 0px;
+  }
+  .bottom__label {
+    padding: 0px 0px 5px 0px;
   }
 }

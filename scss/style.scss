@@ -75,13 +75,20 @@ nav{
 .menu-list{
 	text-align: center;
 	padding: 0px 0px 154px 0px;
+	&::after{
+		content: '';
+		display: block;
+		width: 100%;
+		height: 1px;
+		background: #f2f2f2;
+	}
 	
 	li {
 		display: inline-block;
 		color: #3c3c3c;
 		font-size: 15px;
 		font-weight: bold;
-		padding: 0px 0px 0px 30px;
+		padding: 0px 0px 22px 30px;
 		&:hover{
 			color: #ada074;
 		}
@@ -114,7 +121,8 @@ nav{
 //!about
 .about__conrainer{
 	margin: 0 auto;
-	max-width: 700px;
+	max-width: 730px;
+	padding: 0 15px;
 }
 .about__title{
 	padding: 0px 0px 37px 0px;
@@ -337,86 +345,97 @@ letter-spacing: 3.52px;
 //!contact
 .contact{
 	background: #ffffff; 
-	width: 60%;
+	width: 100%;
 	margin: 0 auto;
 }
 .contact__title{
 	margin: 166px 0px 120px 0px;
 	
 }
-.form__your{
-	display: flex;
-	width: 40%;
-	margin: 0px 0px 60px 0px;
-	
-
-}
-.form__name{
-	flex: 0 1 50%;
-	display: flex;
-	flex-direction: column;
-	padding: 0px 0px 0px 0px;
-	.form__imput-text{
-		margin: 0px 60px 0px 0px;
-		
-	}
-	
-	
-
-}
-.form__email{
-	flex: 0 1 50%;
-	display: flex;
-	flex-direction: column;
-	padding: 0px 0px 0px 0px;
-	
-
-}
-
-
-.form__imput-text{
-	padding: 0px 15px 15px 0px;
-	flex: 0 1 50%;
-	display: block;
-	width: 161px;
-	height: 35px;
-	background-color: #f8f7f7;
-	border-top: 1px solid black;
-	
-}
-
-.your__textarea{
-	display: flex;
-	flex-direction: column;
-
-}
-.for__textarea{
-	overflow: hidden;
-	resize: none;
-	flex: 0 1 50%;
-	background-color: #f8f7f7;
-	border-top: 1px solid black;
-	width: 100%;
-	height: 118px;
-}
-.form__title{
-	padding: 0px 15px 15px 0px;
-	flex: 0 1 50%;
-	flex: 0 1 50%;
-	display: block;
+.label{
+	text-transform: uppercase;
 	font-size: 14px;
-	font-weight: bold;
 	letter-spacing: 0.84px;
 	color: #000;
+	font-weight: bold;
+}
+.input{
+	
+	height: 35px;
+	background:#f8f7f7;
+	border-top: 1px solid black;
+}
+.textarea{
+	margin: 0;
+	background:#f8f7f7;
+	border-top: 1px solid black;
+	height: 118px;
+	width: 383px;
+}
+.contact__flex{
+	display: flex;
+}
+.contact__form-flex{
+	flex: 0 1 383px;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 0px 83px 0px 0px;
+	
+}
+.form__container{
+	margin: 0 auto;
+	max-width: 733px;
+	padding: 0 15px;
+}
+.top{
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 0px 75px 0px;
+	
+}
+.left{
+	display: flex;
+	flex-direction: column;
 }
 
+.right{
+	display: flex;
+	flex-direction: column;
+}
+
+.bottom{
+	display: flex;
+	flex-direction: column;
+}
+.left__label{
+	padding: 0px 0px 18px 0px;
+
+}
+.left__input{
+
+}
+
+.right__label{
+	padding: 0px 0px 18px 0px;
+}
+.right__input{
+	
+}
+
+.bottom__label{
+	padding: 0px 0px 18px 0px;
+}
+
+
 .button{
-	margin: 53px 0px 102px 0px;
+	margin: 24px 0px 102px 0px;
 	text-align: center;
 	border: none;
 	font-size: 14px;
 	letter-spacing: 0.84px;
 	font-weight: bold;
+	align-self: flex-end;
 	button{
 		background-color: Transparent;
 	}
@@ -424,7 +443,7 @@ letter-spacing: 3.52px;
 }
 
 .props{
-	flex: 0 1 60%;
+	flex: 0 1 252px;
 	font-size: 14px;
 	line-height: 26px;
 	color: #000;
@@ -459,7 +478,7 @@ font-weight: bold;
 }
 .contact__flex{
 	display: flex;
-	width: 60%;
+	max-width: 718px;
 	margin: 0 auto;
 }
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -571,8 +590,29 @@ padding: 48px 0px 35px 0px;
 	}
 }
 @media(max-width:780px){
+	.contact__form-flex {
+		padding: 0;
+	}
+	.form__your{
+		margin: 0 auto;
+	}
+	.contact__flex{
+		flex-direction: column;
+		
+		
+	}
+	.props{
+		text-align: center;
+	}
+	.top{
+		text-align: left;
+	}
+	.contact__title{
+		margin: 50px 0px 50px 0px;
+		
+	}
 	.menu-list li{
-		padding: 0px 0px 0px 12px;
+		padding: 0px 0px 22px 12px;
 		
 	}
 	.work__container{
@@ -604,4 +644,45 @@ padding: 48px 0px 35px 0px;
 			
 		}
 	}
+	.button{
+		flex: 1 1 auto;
+		width: 100%;
+		button{
+			border: 1px solid black;
+			width: 100%;
+			padding: 10px 0px 10px 0px;
+			
+		}
 }
+	.top{
+		padding-bottom: 30px;
+	}
+}
+@media(max-width:445px){
+	
+	.top{
+		flex-direction: column;
+		text-align: left;
+		padding-bottom: 10px;
+		
+
+	}
+	.bottom{
+		flex-direction: column;
+		text-align: left;
+	}
+	.left{
+		padding-bottom: 10px;
+	}
+	
+	.right__label{
+		padding: 0px 0px 5px 0px;
+	}
+	.left__label{
+		padding: 0px 0px 5px 0px;
+	}
+	.bottom__label {
+		padding: 0px 0px 5px 0px;
+	}
+}
+
