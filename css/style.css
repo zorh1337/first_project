@@ -84,6 +84,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'lato';
+  min-width: 320px;
 }
 
 main {
@@ -98,16 +99,20 @@ main {
           flex: 1 1 auto;
   text-align: center;
   width: 100%;
-  height: 1189px;
-  background: url("/img/bg-header-copy.png") center/100% 100% no-repeat;
+  height: 100%px;
+  background: url("/img/bg-header-copy.png") center/cover no-repeat;
 }
 
 .header__logo {
-  padding: 275px 0px 0px 0px;
+  padding: 250px 0px 0px 0px;
+}
+
+.header__arrow {
+  padding: 0px 0px 153px 0px;
 }
 
 .header__text {
-  padding: 159px 0px 227px 0px;
+  padding: 159px 0px 225px 0px;
   font-size: 35px;
   font-weight: bold;
   letter-spacing: 5.44px;
@@ -190,23 +195,28 @@ nav {
   margin: 35px auto 0px;
 }
 
+.about__conrainer {
+  margin: 0 auto;
+  max-width: 700px;
+}
+
 .about__title {
   padding: 0px 0px 37px 0px;
 }
 
 .about__text {
   text-align: center;
-  width: 34.50%;
+  width: 100%;
   margin: 0 auto;
   font-size: 14px;
   line-height: 26px;
   color: #868585;
-  padding: 0px 0px 70px 0px;
+  padding: 0px 15px 70px 15px;
 }
 
 .for-what {
   margin: 0 auto;
-  width: 50%;
+  max-width: 787px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -550,4 +560,17 @@ nav {
 .footer__text {
   color: #6c6c6c;
   font-size: 14px;
+}
+
+@media (max-width: 780px) {
+  .for-what {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .for-what .for-what__item {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
